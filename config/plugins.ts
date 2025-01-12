@@ -9,6 +9,7 @@ export default ({ env }) => ({
           secretAccessKey: env("DO_SPACE_SECRET_KEY"),
         },
         region: env("DO_SPACE_REGION"),
+        forcePathStyle: true,
         endpoint: env("DO_SPACE_ENDPOINT"),
         params: {
           Bucket: env("DO_SPACE_BUCKET"),
